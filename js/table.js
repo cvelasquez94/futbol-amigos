@@ -1,5 +1,7 @@
+const pathExcel = '../data/tabla.xlsx'
 function ExportToTable() {  
      var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.xlsx|.xls)$/;  
+     console.log(pathExcel,$("#excelfile").val().toLowerCase())
      /*Checks whether the file is a valid excel file*/  
      if (regex.test($("#excelfile").val().toLowerCase())) {  
          var xlsxflag = false; /*Flag for checking whether excel is .xls format or .xlsx format*/  
@@ -85,4 +87,4 @@ function BindTableHeader(jsondata, tableid) {/*Function used to get all column n
     }  
     $(tableid).append(headerTr$);  
     return columnSet;  
-}  
+}
