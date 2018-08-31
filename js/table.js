@@ -1,4 +1,3 @@
-const pathExcel = '../data/tabla.xlsx'
 function ExportToTable() {  
      var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.xlsx|.xls)$/;  
      console.log(pathExcel,$("#excelfile").val().toLowerCase())
